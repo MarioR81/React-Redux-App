@@ -1,4 +1,4 @@
-import {GET_DATA} from '../actions';
+import {GET_DATA, UPDATE_CATS} from '../actions';
 
 const initialState = {
     cats: [],
@@ -13,6 +13,11 @@ export const catsReducer = (state=initialState, action) => {
                 ...state,
                 isFetchingData: true
             };
+            case UPDATE_CATS:
+                return {
+                    ...state,
+                    cats: action.payload
+                };
             default: 
                 return state;
     }
