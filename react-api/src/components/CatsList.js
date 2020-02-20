@@ -2,16 +2,18 @@ import React from "react";
 import {connect} from 'react-redux';
 
 const CatsList = props => {
-    console.log('Cats list', props)
+    // console.log('Cats list', props)
     return <>
-    {props.cats.map(cat => (<div>{cat}</div>
+    {props.error ? <div className='error'>{props.error}</div> : props.cats.map(cat => (<img src={cat.imageurl}/>
     ))}
     </>
 }
 
 const mapStateToProps = state => {
+    // console.log('cats list', state);
     return {
-        cats: state.cats
+        cats: state.cats,
+        error: state.error
     };
 };
 

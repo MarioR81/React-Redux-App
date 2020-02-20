@@ -1,23 +1,32 @@
-import {GET_DATA, UPDATE_CATS} from '../actions';
+import {FETCH_DATA, UPDATE_CATS, SET_ERROR} from '../actions';
 
 const initialState = {
     cats: [],
-    isFetchingData: false
+    isFetchingData: false,
+    error: ''
 };
 
 
 export const catsReducer = (state=initialState, action) => {
     switch(action.type){
-        case GET_DATA:
+        case FETCH_DATA:
             return{
                 ...state,
-                isFetchingData: true
+                isFetchingData: true,
+                cats: []
             };
             case UPDATE_CATS:
                 return {
                     ...state,
-                    cats: action.payload
+                    cats: action.payload,
+                    isFetchingData: false
                 };
+                case SET_ERROR:
+                    return{
+                        ...state,
+                        isFetchingData: false,
+                        error: action.payload
+                    };
             default: 
                 return state;
     }

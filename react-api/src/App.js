@@ -4,6 +4,7 @@ import {createStore, applyMiddleware} from 'redux';
 import thunk from "redux-thunk";
 import {catsReducer as reducer} from './reducer/catsReducer';
 
+import CatsList from './components/CatsList';
 import CatForm from './components/CatForm';
 import {Provider} from 'react-redux';
 
@@ -16,6 +17,8 @@ function App() {
           <h2>App</h2>
           <h2>Meow!</h2>
         <CatForm />
+        <br/>
+        <CatsList />
       </div>
     </Provider>
   );
