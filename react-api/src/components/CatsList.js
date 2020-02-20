@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 const CatsList = props => {
     // console.log('Cats list', props)
     return <>
-    {props.error ? <div className='error'>{props.error}</div> : props.cats.map(cat => (<img src={cat.imageurl}/>
+    {props.error ? <div className='error'>{props.error}</div> : props.cats.map(cat => (<img className='catCard' src={cat.imageurl}/>
     ))}
     </>
 }

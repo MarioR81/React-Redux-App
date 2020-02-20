@@ -12,9 +12,9 @@ const CatForm  = props => {
 
     return (
     <>{props.isFetchingData ? (
-    <div>We are fetching Data</div>
+    <div className='catButton'>We are fetching Data</div>
      ) : (
-    <button onClick={handleGetData} >Bring out the Cats!</button>
+    <button onClick={handleGetData} className='catForm'>Bring out the Cats!</button>
      )}
     </>
     );

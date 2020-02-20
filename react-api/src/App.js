@@ -13,7 +13,7 @@ const store = createStore(reducer, applyMiddleware(thunk));
 function App() {
   return (
     <Provider store={store}>
-      <div>
+      <div className='App'>
           <h2>App</h2>
           <h2>Meow!</h2>
         <CatForm />
