@@ -14,8 +14,7 @@ function App() {
   return (
     <Provider store={store}>
       <div className='App'>
-          <h2>App</h2>
-          <h2>Meow!</h2>
+          <h1>Meow!</h1>
         <CatForm />
         <br/>
         <CatsList />

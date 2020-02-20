@@ -7,7 +7,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: ; */
   color: white;
 }
 
@@ -29,4 +28,5 @@ div.error{
 .catForm{
   margin-bottom: 30px;
   height: 30px;
+  font: 
 }
