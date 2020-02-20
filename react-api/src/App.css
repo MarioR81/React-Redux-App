@@ -1,0 +1,32 @@
+
+.App {
+  background-color: #204794;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+div.error{
+  color: red;
+}
+
+.catButton{
+  width: 500px;
+}
+
+.catCard{
+  margin-bottom: 50px;
+}
+.catForm{
+  margin-bottom: 30px;
+  height: 30px;
+  font: 
+}
